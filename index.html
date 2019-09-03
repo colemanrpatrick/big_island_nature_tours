@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+    <title>big island nature tours</title>
+  </head>
+  <body>
+    <main>
+      <ul id="main-nav">
+        <li><a href="#">home</a></li>
+        <li><a href="#">land tours</a></li>
+        <li><a href="#">ocean tours</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">cart</a></li>
+      </ul>
+      <div id="wrapper">
+        <div id="masthead">
+          <ul id="phone">
+            <li>
+              <a href="#"><span>(Toll Free)</span> 1-866-482-9775</a>
+            </li>
+            <li>
+              <a href="#"><span>(Local)</span> 808-892-2082</a>
+            </li>
+          </ul>
+          <div id="logo">
+            <a href="#">
+              <img src="images/bigislandnaturetourslogo.jpg" alt="">
+              <h1>big island<span>nature tours</span></h1>
+            </a>
+          </div>
+          <button type="button" name="button" class="menu-btn" onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" id="menu-btn">
+            <hr class="menu-btn-hr-1"/>
+            <hr class="menu-btn-hr-2"/>
+            <hr class="menu-btn-hr-3"/>
+          </button>
+        </div>
+        <!-- ===== banner ====== -->
+        <div id="banner">
+          <header>
+            <h2>discount<span>big island</span>nature tours</h2>
+          </header>
+          <div id="framecont" class="frame-cont">
+            <div class="frameShadow top"></div>
+            <div class="frameShadow bottom"></div>
+            <div class="frame" id="frame">
+              <section class="slide" id="slide-waterfall">
+                <div class="test">
+                  <aside>
+                    <a href="#">
+                      <span>hawaii forest and trail</span><br/>
+                      hilo tropical waterfalls
+                    </a>
+                  </aside>
+                </div>
+              </section>
+              <section class="slide" id="slide-volcano">
+                <div class="test">
+                  <aside>
+                    <a href="#">
+                      <span>hawaii forest and trail</span><br/>
+                      discover volcano country
+                    </a>
+                  </aside>
+                </div>
+              </section>
+              <section class="slide" id="slide-maunakea">
+                <div class="test">
+                  <aside>
+                    <a href="#">
+                      <span>hawaii forest and trail</span><br/>
+                      Maunakea Summit & Stars Adventure
+                    </a>
+                  </aside>
+                </div>
+              </section>
+              </div>
+          </div>
+            <div class="frame-nav">
+              <button type="button" id="navBtnBack" onclick="sliderPlus(-1)"><i class="material-icons">arrow_back_ios</i></button>
+              <button type="button" class="frame-nav-btn" name="button" onclick="sliderCurrent(1);"></button>
+              <button type="button" class="frame-nav-btn" name="button" onclick="sliderCurrent(2);"></button>
+              <button type="button" class="frame-nav-btn" name="button" onclick="sliderCurrent(3);"></button>
+              <button type="button" id="navBtnForward" onclick="sliderPlus(1)"><i class="material-icons">arrow_forward_ios</i></button>
+            </div>
+          </div>
+        <!-- ===== categories ====== -->
+        <div id="category">
+          <h3>popular activites</h3>
+          <ul>
+            <li><button type="button" name="button" onclick="tabToggle('1','detail',' active')"><div class="img-cont"><img src="images/bigislanddiscounticons.jpg" alt="" id="cat-1"></div><span>sightseeing tours</span></button></li>
+            <li><button type="button" name="button" onclick="tabToggle('2','detail',' active')"><div class="img-cont"><img src="images/bigislanddiscounticons.jpg" alt="" id="cat-2" ></div><span>volcano tours</span></button></li>
+            <li><button type="button" name="button" onclick="tabToggle('3','detail',' active')"><div class="img-cont"><img src="images/bigislanddiscounticons.jpg" alt="" id="cat-3"></div><span>hiking tours</span></button></li>
+            <li><button type="button" name="button" onclick="tabToggle('4','detail',' active')"><div class="img-cont"><img src="images/bigislanddiscounticons.jpg" alt="" id="cat-4"></div><span>snorkeling</span></button></li>
+            <li><button type="button" name="button" onclick="tabToggle('5','detail',' active')"><div class="img-cont"><img src="images/bigislanddiscounticons.jpg" alt="" id="cat-5"></div><span>dolphin encouters</span></button></li>
+            <li><button type="button" name="button" onclick="tabToggle('6','detail',' active')"><div class="img-cont"><img src="images/bigislanddiscounticons.jpg" alt="" id="cat-6"></div><span>whale watching</span></button></li>
+          </ul>
+          <div class="detail" id="sightseeing">
+            <header><span>sightseeing tours</span><button type="button" name="button" onclick="idToggle('sightseeing','active')"><i class="material-icons">clear</i></button></header>
+            <ul>
+              <li><a href="#">Kohala Waterfalls Adventure</a></li>
+              <li><a href="#">Hilo Tropical Waterfalls</a></li>
+              <li><a href="#">Maunakea Summit & Stars Adventure</a></li>
+            </ul>
+            <a href="#" class="alt-anchor">more sightseeing tours</a>
+          </div>
+          <div class="detail" id="volcano">
+            <header><span>volcano tours</span><button type="button" name="button" onclick="idToggle('volcano','active')"><i class="material-icons">clear</i></button></header>
+            <ul>
+              <li><a href="#">Epic Island Volcano Journey</a></li>
+              <li><a href="#">Volcano Unveiled</a></li>
+              <li><a href="#">Discover Volcano Country</a></li>
+            </ul>
+            <a href="#" class="alt-anchor">more volcano tours</a>
+          </div>
+          <div class="detail" id="hiking">
+            <header><span>hiking tours</span><button type="button" name="button" onclick="idToggle('hiking','active')"><i class="material-icons">clear</i></button></header>
+            <ul>
+              <li><a href="#">Endangered Native Habitats Adventure</a></li>
+              <li><a href="#">Hakalau Forest Reserve Exclusive</a></li>
+              <li><a href="#">another hiking tour</a></li>
+            </ul>
+            <a href="#" class="alt-anchor">more hiking tours</a>
+          </div>
+          <div class="detail" id="snorkeling">
+            <header><span>snorkeling</span><button type="button" name="button" onclick="idToggle('snorkeling','active')"><i class="material-icons">clear</i></button></header>
+            <ul>
+              <li><a href="#"><span>Captain Zodiac</span><br/>Raft and Snorkel Adventure</a></li>
+              <li><a href="#"><span>Captain Zodiac</span><br/>"Beat the Crowd" Hawaii Snorkeling Tour</a></li>
+              <li><a href="#"><span>Hang Loose Boat Tours</span><br/>Kealakekua Bay Snorkel Tour</a></li>
+            </ul>
+            <a href="#" class="alt-anchor">more snorkeling tours</a>
+          </div>
+          <div class="detail" id="dolphin">
+            <header><span>dolphin encouters</span><button type="button" name="button" onclick="idToggle('dolphin','active')"><i class="material-icons">clear</i></button></header>
+            <ul>
+              <li><a href="#"><span>Ocean Encounters</span><br/>Kealakekua Reef Snorkel</a></li>
+              <li><a href="#"><span>Kona Diving EcoAdventures</span><br/>Reef & Dolphin Snorkel Tour</a></li>
+              <li><a href="#"><span>Hang Loose Boat Tours</span><br/>Wild Dolphin Watch & Snorkel</a></li>
+            </ul>
+            <a href="#" class="alt-anchor">more dolphin encouters</a>
+          </div>
+          <div class="detail" id="whale">
+            <header><span>whale watching</span><button type="button" name="button" onclick="idToggle('whale','active')"><i class="material-icons">clear</i></button></header>
+            <ul>
+              <li><a href="#"><span>Lava Ocean Tours</span><br/>Hilo Whale Watching</a></li>
+              <li><a href="#"><span>Hilo Ocean Adventures</span><br/>Whale Watch Ocean Exploration</a></li>
+              <li><a href="#"><span>Captain Zodiac</span><br/>Whale Watch</a></li>
+            </ul>
+            <a href="#" class="alt-anchor">more whale watching tours</a>
+          </div>
+        </div>
+        <!-- ========= -->
+        <div class="land-activity">
+          <header>
+            <h3>top 5<span>big island</span>nature tours</h3>
+          </header>
+          <section>
+            <div class="product" id="land-1">
+              <h4><span>Endangered Native Habitats Adventure</span></h4>
+              <ul>
+                <li><p>retail</p><span class="strike">$196</span></li>
+                <li><p>discount</p><span class="bold">$179</span></li>
+              </ul>
+              <a href="#">learn more</a>
+            </div>
+            <div class="product" id="land-2">
+              <h4><span>Hakalau Forest Reserve Exclusive</span></h4>
+              <ul>
+                <li><p>retail</p><span class="strike">$225</span></li>
+                <li><p>discount</p><span class="bold">$188</span></li>
+              </ul>
+              <a href="#">learn more</a>
+            </div>
+            <div class="product" id="land-3">
+              <h4><span>Kohala Waterfalls Adventure</span></h4>
+              <ul>
+                <li><p>retail</p><span class="strike">$184.32</span></li>
+                <li><p>discount</p><span class="bold">$166.41</span></li>
+              </ul>
+              <a href="#">learn more</a>
+            </div>
+            <div class="product" id="land-4">
+              <h4><span>Mauna Kea Summit & Stars Adventure</span></h4>
+              <ul>
+                <li><p>retail</p><span class="strike">$220.80</span></li>
+                <li><p>discount</p><span class="bold">$196.00</span></li>
+              </ul>
+              <a href="#">learn more</a>
+            </div>
+            <div class="product" id="land-5">
+              <h4><span>Mauna Kea Sunrise Experience</span></h4>
+              <ul>
+                <li><p>retail</p><span class="strike">$179.00</span></li>
+                <li><p>discount</p><span class="bold">$165.00</span></li>
+              </ul>
+              <a href="#">learn more</a>
+            </div>
+          </section>
+        </div>
+        <!-- ===== banner ====== -->
+        <div class="ocean-activity">
+          <header>
+            <h3>top 5<span>big island</span>ocean tours</h3>
+          </header>
+          <section>
+          <div class="product" id="ocean-1">
+            <h4><span>Lorem ipsum dolor sit amet</span></h4>
+            <ul>
+              <li><p>retail</p><span class="strike">$000</span></li>
+              <li><p>discount</p><span class="bold">$000</span></li>
+            </ul>
+            <a href="#">learn more</a>
+          </div>
+          <div class="product" id="ocean-2">
+            <h4><span>Lorem ipsum dolor sit amet</span></h4>
+            <ul>
+              <li><p>retail</p><span class="strike">$000</span></li>
+              <li><p>discount</p><span class="bold">$000</span></li>
+            </ul>
+            <a href="#">learn more</a>
+          </div>
+          <div class="product" id="ocean-3">
+            <h4><span>Lorem ipsum dolor sit amet</span></h4>
+            <ul>
+              <li><p>retail</p><span class="strike">$000</span></li>
+              <li><p>discount</p><span class="bold">$000</span></li>
+            </ul>
+            <a href="#">learn more</a>
+          </div>
+          <div class="product" id="ocean-4">
+            <h4><span>Lorem ipsum dolor sit amet</span></h4>
+            <ul>
+              <li><p>retail</p><span class="strike">$000</span></li>
+              <li><p>discount</p><span class="bold">$000</span></li>
+            </ul>
+            <a href="#">learn more</a>
+          </div>
+          <div class="product" id="ocean-5">
+            <h4><span>Lorem ipsum dolor sit amet</span></h4>
+            <ul>
+              <li><p>retail</p><span class="strike">$000</span></li>
+              <li><p>discount</p><span class="bold">$000</span></li>
+            </ul>
+            <a href="#">learn more</a>
+          </div>
+         </section>
+        </div>
+        <!-- ============================ -->
+        <div id="article-section">
+          <div class="article" id="article-1">
+            <header>
+              <h3>Excepteur sint occaecat</h3>
+            </header>
+            <div id="playerWrapper">
+              <div id="player"></div>
+              <p>featured : <span>Discover Volcano Country</span></br><a href="#">book now</a></p>
+            </div>
+            <script>
+            var tag = document.createElement('script');
+
+            tag.src="https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            var player;
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player('player', {
+                host: 'https://www.youtube.com',
+                rel: '0',
+                videoId: 'JQQXvKAIotM',
+                events: {
+                  'onReady': onPlayerReady,
+                  'onStateChange': onPlayerStateChange
+                },
+                playerVars: {
+                  rel:0,
+                  showInfo:0
+                }
+              });
+            }
+            function onPlayerReady(event) {
+              player.mute();
+              event.target.playVideo();
+            }
+
+            function onPlayerStateChange(event) {
+              if(player.getPlayerState() === 0){
+                console.log("ended");
+              }
+              if(player.getPlayerState() === 2){
+                console.log("paused");
+                $('.ytp-button.ytp-collapse').click();
+
+              }
+            }
+            </script>
+            <article>
+              <p><span>L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+          </div>
+          <!-- ============ -->
+        <div class="coverage-section">
+          <h2>why book with us</h2>
+          <ul>
+            <li id="c-1">
+              <span>
+              <i class="material-icons icon-first">laptop</i>
+              <i class="material-icons icon-second">lock</i>
+              </span>
+              <header>safe and<br>secure</header>
+              <p>Online booking system with validated privacy protection</p>
+            </li>
+            <li id="c-2">
+              <span>
+                <i class="material-icons icon-first">event</i>
+                <i class="material-icons icon-second">call</i>
+              </span>
+              <header>same day<br>reservationst</header>
+              <p>Receive a full refund if cancellation is made at least 48 hours in advance</p>
+            </li>
+            <li id="c-3">
+              <span>
+                <i class="material-icons icon-first">sentiment_satisfied_alt</i>
+              </span>
+              <header>friendly<br>support</header>
+              <p>Receive your voucher the same day after booking your activity</p>
+            </li>
+            <li id="c-4">
+              <span>
+                <i class="material-icons icon-first">undo</i>
+                <i class="material-icons icon-second">attach_money</i>
+              </span>
+              <header>money back<br>guranteed</header>
+              <p>Our representatives will help you select the best activities and ensure 100% satisfaction</p>
+            </li>
+          </ul>
+        </div>
+        <!-- ============================ -->
+        <footer class="footer">
+          <header>
+            <div id="footer-logo">
+              <a href="#">
+                <img src="images/bigislandnaturetourslogo.jpg" alt="">
+                <h2>big island<span>nature tours</span></h2>
+              </a>
+            </div>
+          </header>
+          <div class="social">
+            <p>follow us</p>
+            <a class="facebook-social" href="https://www.facebook.com/HawaiiDiscount"></a>
+            <a class="twitter-social" href="https://twitter.com/hawaiidiscount"></a>
+            <a class="youtube-social" href="https://www.youtube.com/hawaiidiscount"></a>
+            <a class="pinterest-social" href="https://www.pinterest.com/hawaiidiscount/"></a>
+          </div>
+          <section>
+            <ul>
+              <li><b>navigation</b></li>
+              <li> <a href="#">home</a> </li>
+              <li> <a href="#">contact</a> </li>
+              <li> <a href="#">about us</a> </li>
+              <li> <a href="#">cart</a> </li>
+            </ul>
+            <ul>
+              <li><b>site info</b></li>
+              <li> <a href="#">faq</a> </li>
+              <li> <a href="#">site map</a> </li>
+              <li> <a href="#">privacy policy</a> </li>
+              <li> <a href="#">terms</a> </li>
+              <li> <a href="#">login</a> </li>
+            </ul>
+          </section>
+          <p>Copyright (c) 2019 hawaii discount All Rights Reserved.</p>
+        </footer>
+      </div>
+    </main>
+
+
+    <script type="text/javascript" src="toggle.js">
+
+    </script>
+  </body>
+</html>
